@@ -1,0 +1,153 @@
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.galerie {
+  display: flex;
+  justify-content: space-around;
+}
+
+.obrazek {
+  width: calc(100% / 4);
+}
+
+.obrazek:hover {
+  /* transform: scale(2); */
+  /* transform: rotate(0.25turn); */
+  transform: scaleX(-1);
+}
+
+.krizek {
+  margin-top: 50px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  outline: 4px solid red;
+}
+
+.cara-1,
+.cara-2 {
+width: 100%;
+flex-shrink: 0;
+height: 4px;
+background-color: black;
+}
+
+.cara-1 {
+	transform: rotate(45deg);
+
+}
+
+.cara-2 {
+	transform: rotate(-45deg);
+	position: relative;
+	left: -100%;
+}
+.sipka{
+	margin-top: 50px;
+	width: 100px;
+	height: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+	border: 10px solid red;
+}
+
+.cara-a,
+.cara-b,
+.cara-c {
+width: 100%;
+height: 4px;
+background-color: black;
+}
+
+.cara-a,
+.cara-c {
+width: 50%;
+
+}
+.cara-b {
+	background-color: green;
+}
+
+.cara-a {
+	transform-origin: 100% 50%;
+	transform: rotate(-45deg);
+}
+
+.cara-c {
+	transform-origin: 100% 50%;
+	transform: rotate(45deg);
+}
+
+button {
+  cursor: grab;
+}
+
+button:active {
+  cursor: grabbing;
+}
+
+h2 {
+  margin-top: 3em;
+}
+
+.houpacka {
+  /*position: relative;*/
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin-top: 40px;
+}
+
+.houpacka__zakladna {
+  margin-top: -79px;
+}
+
+.houpacka__deti {
+	transition: transform 0.7s; /* Додаємо перехід для зміни transform */
+	transform: rotate(-15deg); /* Початкове значення трансформації */
+  }
+  .houpacka:active .houpacka__deti {
+	transform: rotate(15deg);
+  }
+
+/* .houpacka__zakladna {
+	position: absolute; /* Додаємо absolute позиціонування до .houpacka__zakladna */
+/* bottom: -30px; /* Зафіксовуємо нижній край */
+/*transform: translateX(-50%); /* Це позиціонування посередині відносно батьківського елемента */
+/*left: 50%; /* Позиціонуємо посередині 
+} */
+
+.kocka {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin-top: 40px;
+}
+
+.kocka__obrazek {
+  transition: transform 0.3s ease; /* Додаємо плавну анімацію */
+}
+.kocka:active .kocka__obrazek {
+  /* transform: scaleY(0.9); */
+  transform-origin: top; /* Bod otáčení nastavíme nahoře */
+  transform: scaleY(0.9) translateY(10%); /* Měníme měřítko na výšku a měníme dolů */
+}
+
