@@ -1,0 +1,124 @@
+/* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
+/* toto je černá magie, na kterou nešahej! */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+/*
+BARVY
+czechitas                 #b92e81
+šedé pozadí stránky       #bdc3c7
+tmavé pozadí pod textem   #31363b
+dělítka mezi tlačítky     #3f464d
+tlačítko portfolio        #e74c3c
+tlačítko facebook         #3b5998
+tlačítko twitter          #1da1f2
+*/
+
+.jmeno {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  background-color: #bdc3c7;
+}
+
+.profil {
+  width: 330px;
+  background-color: #31363b;
+  box-shadow: 5px 10px 10px grey;
+  margin: 50px;
+}
+
+.hlavicka {
+  position: relative;
+}
+
+.foto {
+  width: 100%;
+}
+
+.logo {
+  position: absolute;
+  bottom: 0;
+  background-color: #b92e81;
+  border-radius: 50%;
+  right: 20px;
+  bottom: -20px;
+  box-shadow: 5px 5px 5px rgb(33, 33, 33);
+}
+
+.obsah {
+  color: white;
+  padding: 20px;
+}
+
+p {
+  color: #bdc3c7;
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.odkazy {
+  list-style: none;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:600;
+  font-style: normal;
+}
+
+.odkazy li {
+  display: inline-block;
+}
+
+a {
+  color: #bdc3c7;
+  text-decoration: none;
+}
+
+.odkazy a:hover {
+  color: white;
+}
+
+.portfolio {
+  width: 100%;
+  border-top: 1px solid #3f464d;
+  padding: 15px;
+}
+
+.portfolio:hover {
+  background-color: #e74c3c;
+}
+
+.facebook {
+  width: 50%;
+  border: 1px solid #3f464d;
+  padding: 15px;
+}
+
+.facebook:hover {
+  background-color: #3b5998;
+}
+
+.twitter {
+  width: 50%;
+  border: 1px solid #3f464d;
+  border-left: none;
+  padding: 15px;
+}
+
+.twitter:hover {
+  background-color: #1da1f2;
+}
+
+.odkazy li {
+    display: inline-block;
+}
