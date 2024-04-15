@@ -1,0 +1,45 @@
+@keyframes blikani {
+	0% {
+		opacity: 1;
+	}
+	30% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.digitalni__dvojtecka {
+	animation-name: blikani;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: step-start;
+}
+
+@keyframes rotace {
+	0% {
+		transform: rotate(0turn);
+	}
+	100% {
+		transform: rotate(1turn);
+	}
+}
+
+.analogove__hodinova,
+.analogove__minutova,
+.analogove__vterinova {
+	animation-name: rotace;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.analogove__hodinova {
+	animation-duration: calc(86400s / 1000);
+}
+.analogove__minutova {
+	animation-duration: calc(3600s / 1000);
+}
+.analogove__vterinova {
+	animation-duration: calc(60s / 1000);
+}

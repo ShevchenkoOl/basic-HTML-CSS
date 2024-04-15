@@ -1,0 +1,11 @@
+@media (prefers-reduced-motion) {
+	.datum {
+		animation: none;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-image: url('podklady/moon.jpg');
+	}
+}
