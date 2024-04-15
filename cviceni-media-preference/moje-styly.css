@@ -9,3 +9,6 @@
 		background-image: url('podklady/moon.jpg');
 	}
 }
+/*@media (prefers-reduced-motion): Tento mediální dotaz se používá, když uživatel preferuje snížený počet animací nebo vypnutí animací ve svém prohlížeči. Pomocí tohoto mediálního dotazu můžete určit styly pro prvky, které se animují, a například vypnout animaci, pokud jsou takovéto nastavení zapnuty. V tomto případě, když je uživatelovým preferencí nastaveno "preferování snížené animace", třídě .datum bude přiřazeno vlastnost animation: none;, což vypne jakoukoliv animaci pro prvky s touto třídou.
+
+@media (prefers-color-scheme: dark): Tento mediální dotaz se používá, když uživatel preferuje tmavou barevnou schému (například pro uživatele s tmavým režimem operačního systému nebo preferovaným tmavým designem). Zde se používá k nastavení pozadí (background-image) pro prvek body, když uživatel zvolí tmavou barevnou schému. V tomto případě, když uživatel vybere tmavou barevnou schému, pozadí pro body se stane obrázek měsíce (moon.jpg).*/
